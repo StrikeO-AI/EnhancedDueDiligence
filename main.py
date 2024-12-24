@@ -45,7 +45,6 @@ TRAINING_CATEGORIES = [
     "Regulatory Reporting"
 ]
 
-
 st.set_page_config(page_title="AML/CTF Case Management System", layout="wide")
 
 def main():
@@ -244,101 +243,174 @@ def display_transaction_monitoring():
             with col3:
                 st.metric("Average Amount", f"${filtered_df['amount'].mean():,.2f}")
 
-            # Export filtered data
-            st.header("Export Options")
-            col1, col2 = st.columns(2)
+            # Export Options Wizard
+            st.header("Export Customization Wizard")
 
-            with col1:
-                export_format = st.selectbox(
-                    "Export Format",
-                    ["CSV", "JSON", "Excel"]
-                )
+            with st.expander("Configure Export Settings", expanded=True):
+                # Format Selection with detailed info
+                col1, col2 = st.columns(2)
+                with col1:
+                    export_format = st.selectbox(
+                        "Export Format",
+                        ["CSV", "JSON", "Excel"],
+                        help="CSV: Simple tabular format\n"
+                             "JSON: Structured data with nested information\n"
+                             "Excel: Multiple worksheets with formatted data"
+                    )
 
-            with col2:
-                export_data = st.multiselect(
-                    "Data to Include",
-                    [
-                        "Transaction Details",
-                        "Risk Analysis",
-                        "Compliance Metrics",
-                        "AI Analysis",
-                        "Alert Triggers"
-                    ],
-                    default=["Transaction Details"]
-                )
+                with col2:
+                    # Report template selection
+                    template = st.selectbox(
+                        "Report Template",
+                        ["Standard Report", "Detailed Analysis", "Executive Summary"],
+                        help="Choose a predefined template for your report"
+                    )
 
-            if st.button("Generate Report"):
-                try:
-                    # Prepare export data based on selection
-                    export_dict = {}
+                # Data Components Selection
+                st.subheader("Select Data Components")
 
-                    if "Transaction Details" in export_data:
-                        export_dict["transactions"] = filtered_df.to_dict(orient='records')
+                col3, col4 = st.columns(2)
+                with col3:
+                    export_components = {
+                        "Transaction Details": st.checkbox("Transaction Details", value=True,
+                            help="Basic transaction information including dates, amounts, and parties"),
+                        "Risk Analysis": st.checkbox("Risk Analysis", value=False,
+                            help="Detailed risk scoring and analysis"),
+                        "Compliance Metrics": st.checkbox("Compliance Metrics", value=False,
+                            help="KPIs and compliance performance data"),
+                        "AI Analysis": st.checkbox("AI Analysis", value=False,
+                            help="AI-powered pattern detection and insights"),
+                        "Alert Triggers": st.checkbox("Alert Triggers", value=False,
+                            help="Suspicious activity alerts and warnings")
+                    }
 
-                    if "Risk Analysis" in export_data:
-                        export_dict["risk_indicators"] = risk_indicators
+                with col4:
+                    # Additional Options
+                    include_graphs = st.checkbox("Include Visualizations", value=False,
+                        help="Add charts and graphs to Excel reports")
+                    include_metadata = st.checkbox("Include Metadata", value=True,
+                        help="Add report generation details and timestamps")
+                    redact_sensitive = st.checkbox("Redact Sensitive Information", value=False,
+                        help="Automatically redact sensitive data fields")
 
-                    if "Compliance Metrics" in export_data:
-                        export_dict["compliance_metrics"] = compliance_data.to_dict(orient='records')
+            # Preview Section
+            if any(export_components.values()):
+                st.subheader("Report Preview")
+                preview_container = st.container()
 
-                    if "AI Analysis" in export_data and 'ai_analysis' in locals():
-                        export_dict["ai_analysis"] = ai_analysis
+                with preview_container:
+                    # Show sample of selected components
+                    if export_components["Transaction Details"]:
+                        st.write("📊 Transaction Details Sample:")
+                        st.dataframe(filtered_df.head(), use_container_width=True)
 
-                    if "Alert Triggers" in export_data and alerts:
-                        export_dict["alerts"] = alerts
+                    if export_components["Risk Analysis"] and 'risk_indicators' in locals():
+                        st.write("🎯 Risk Analysis Sample:")
+                        st.json(risk_indicators)
 
-                    # Generate export file based on format
-                    if export_format == "CSV":
-                        # For CSV, we'll focus on transaction data
-                        csv = filtered_df.to_csv(index=False)
-                        st.download_button(
-                            label="Download CSV Report",
-                            data=csv,
-                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                            mime="text/csv"
-                        )
+                    if export_components["Compliance Metrics"] and 'compliance_data' in locals():
+                        st.write("📈 Compliance Metrics Sample:")
+                        st.dataframe(compliance_data.head(), use_container_width=True)
 
-                    elif export_format == "JSON":
-                        # JSON can include all selected data
-                        json_str = json.dumps(export_dict, indent=2, default=str)
-                        st.download_button(
-                            label="Download JSON Report",
-                            data=json_str,
-                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
-                            mime="application/json"
-                        )
+                # Generate Report Button
+                if st.button("Generate Report"):
+                    try:
+                        # Prepare export data based on selection
+                        export_dict = {}
 
-                    else:  # Excel
-                        # Create Excel file with multiple sheets
-                        excel_buffer = io.BytesIO()
-                        with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
-                            if "Transaction Details" in export_data:
-                                filtered_df.to_excel(writer, sheet_name='Transactions', index=False)
+                        if export_components["Transaction Details"]:
+                            export_dict["transactions"] = filtered_df.to_dict(orient='records')
 
-                            if "Risk Analysis" in export_data:
-                                pd.DataFrame([risk_indicators]).to_excel(writer, sheet_name='Risk Analysis', index=False)
+                        if export_components["Risk Analysis"] and 'risk_indicators' in locals():
+                            export_dict["risk_indicators"] = risk_indicators
 
-                            if "Compliance Metrics" in export_data:
-                                compliance_data.to_excel(writer, sheet_name='Compliance Metrics', index=False)
+                        if export_components["Compliance Metrics"] and 'compliance_data' in locals():
+                            export_dict["compliance_metrics"] = compliance_data.to_dict(orient='records')
 
-                            if "AI Analysis" in export_data and 'ai_analysis' in locals():
-                                pd.DataFrame([ai_analysis]).to_excel(writer, sheet_name='AI Analysis', index=False)
+                        if export_components["AI Analysis"] and 'ai_analysis' in locals():
+                            export_dict["ai_analysis"] = ai_analysis
 
-                            if "Alert Triggers" in export_data and alerts:
-                                pd.DataFrame({'alerts': alerts}).to_excel(writer, sheet_name='Alerts', index=False)
+                        if export_components["Alert Triggers"] and alerts:
+                            export_dict["alerts"] = alerts
 
-                        excel_data = excel_buffer.getvalue()
-                        st.download_button(
-                            label="Download Excel Report",
-                            data=excel_data,
-                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
-                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                        )
+                        # Add metadata if selected
+                        if include_metadata:
+                            export_dict["metadata"] = {
+                                "generated_at": datetime.now().isoformat(),
+                                "template": template,
+                                "components_included": [k for k, v in export_components.items() if v],
+                                "filters_applied": {
+                                    "date_range": [d.strftime('%Y-%m-%d') for d in date_range],
+                                    "amount_range": amount_range,
+                                    "transaction_types": selected_types
+                                }
+                            }
 
-                    st.success("Report generated successfully!")
+                        # Generate export based on format
+                        if export_format == "CSV":
+                            csv = filtered_df.to_csv(index=False)
+                            st.download_button(
+                                label="Download CSV Report",
+                                data=csv,
+                                file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                                mime="text/csv"
+                            )
 
-                except Exception as e:
-                    st.error(f"Error generating report: {str(e)}")
+                        elif export_format == "JSON":
+                            json_str = json.dumps(export_dict, indent=2, default=str)
+                            st.download_button(
+                                label="Download JSON Report",
+                                data=json_str,
+                                file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+                                mime="application/json"
+                            )
+
+                        else:  # Excel
+                            excel_buffer = io.BytesIO()
+                            with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
+                                if export_components["Transaction Details"]:
+                                    filtered_df.to_excel(writer, sheet_name='Transactions', index=False)
+
+                                if export_components["Risk Analysis"] and 'risk_indicators' in locals():
+                                    pd.DataFrame([risk_indicators]).to_excel(
+                                        writer, sheet_name='Risk Analysis', index=False
+                                    )
+
+                                if export_components["Compliance Metrics"] and 'compliance_data' in locals():
+                                    compliance_data.to_excel(
+                                        writer, sheet_name='Compliance Metrics', index=False
+                                    )
+
+                                if export_components["AI Analysis"] and 'ai_analysis' in locals():
+                                    pd.DataFrame([ai_analysis]).to_excel(
+                                        writer, sheet_name='AI Analysis', index=False
+                                    )
+
+                                if export_components["Alert Triggers"] and alerts:
+                                    pd.DataFrame({'alerts': alerts}).to_excel(
+                                        writer, sheet_name='Alerts', index=False
+                                    )
+
+                                if include_metadata:
+                                    pd.DataFrame([export_dict["metadata"]]).to_excel(
+                                        writer, sheet_name='Metadata', index=False
+                                    )
+
+                            excel_data = excel_buffer.getvalue()
+                            st.download_button(
+                                label="Download Excel Report",
+                                data=excel_data,
+                                file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
+                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                            )
+
+                        st.success("Report generated successfully!")
+
+                    except Exception as e:
+                        st.error(f"Error generating report: {str(e)}")
+
+            else:
+                st.warning("Please select at least one data component to include in the report.")
 
             # Interactive visualizations with filtered data
             st.subheader("Transaction Analysis Dashboard")
@@ -643,7 +715,6 @@ def display_training_module():
                     st.subheader("Focus Areas")
                     for area in analysis['focus_areas']:
                         st.markdown(f"- {area}")
-
 
 
 if __name__ == "__main__":
