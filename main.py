@@ -27,6 +27,13 @@ from utils.visualization import (
     create_anomaly_scatter
 )
 from utils.ai_analyzer import analyze_transaction_pattern
+from utils.risk_visualization import (
+    create_risk_gauge,
+    create_compliance_timeline,
+    create_risk_heatmap,
+    calculate_risk_indicators,
+    generate_compliance_metrics
+)
 
 st.set_page_config(page_title="AML/CTF Case Management System", layout="wide")
 
@@ -327,6 +334,60 @@ def display_transaction_monitoring():
                     st.experimental_rerun()
             else:
                 st.success("No suspicious transactions detected")
+
+            # Real-time Compliance Dashboard
+            st.header("Real-time Compliance Dashboard")
+
+            # Calculate risk indicators
+            risk_indicators = calculate_risk_indicators(filtered_df)
+
+            # Display risk gauges in columns
+            st.subheader("Risk Indicators")
+            cols = st.columns(4)
+
+            # Volume Risk Gauge
+            with cols[0]:
+                volume_gauge = create_risk_gauge(
+                    risk_indicators['volume_risk'],
+                    "Volume Risk"
+                )
+                st.plotly_chart(volume_gauge, use_container_width=True)
+
+            # Frequency Risk Gauge
+            with cols[1]:
+                freq_gauge = create_risk_gauge(
+                    risk_indicators['frequency_risk'],
+                    "Frequency Risk"
+                )
+                st.plotly_chart(freq_gauge, use_container_width=True)
+
+            # Concentration Risk Gauge
+            with cols[2]:
+                conc_gauge = create_risk_gauge(
+                    risk_indicators['concentration_risk'],
+                    "Concentration Risk"
+                )
+                st.plotly_chart(conc_gauge, use_container_width=True)
+
+            # Structuring Risk Gauge
+            with cols[3]:
+                struct_gauge = create_risk_gauge(
+                    risk_indicators['structuring_risk'],
+                    "Structuring Risk"
+                )
+                st.plotly_chart(struct_gauge, use_container_width=True)
+
+            # Risk Heatmap
+            st.subheader("Risk Factor Analysis")
+            risk_heatmap = create_risk_heatmap(risk_indicators)
+            st.plotly_chart(risk_heatmap, use_container_width=True)
+
+            # Compliance Timeline
+            st.subheader("Compliance Metrics Timeline")
+            compliance_data = generate_compliance_metrics(filtered_df)
+            compliance_timeline = create_compliance_timeline(compliance_data)
+            st.plotly_chart(compliance_timeline, use_container_width=True)
+
 
         except Exception as e:
             st.error(f"Error analyzing transactions: {str(e)}")
