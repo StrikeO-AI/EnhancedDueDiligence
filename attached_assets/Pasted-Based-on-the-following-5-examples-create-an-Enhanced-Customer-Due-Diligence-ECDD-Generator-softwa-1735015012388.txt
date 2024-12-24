@@ -1,0 +1,374 @@
+Based on the following 5 examples, create an Enhanced Customer Due Diligence (ECDD) Generator/software/app, where the highlighted fields (labels) will change automatically if another excel/json file is uploaded or copied to the  body of the software/app. The information that will change 1.(i) Analysed By:
+1. Analysis and Review(a) Name:     (Analyst Name)
+(b) Position: (Designation)
+(c) Date:        (Date)
+(d) Case Number:        (EC_date_increamental number starting from 01)
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:            XXXincreamental number starting from 01
+2.2. Full Name: (Customer Name)
+2.3 Profile Summary
+(Auto generate using the same formatting from the samples)3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+N/A
+6. Transaction Analysis
+Transaction Analysis:
+(Auto generate using the same formatting from the samples) Additional Information:  (Auto generate using the same formatting from the samples- if available)7. Behavioral Analysis (Auto generate using the same formatting from the samples) 8.  Reccomendation (Auto generate using the same formatting from the samples) -------- Sample 1:  ((""))  ; Sample 2: (("""")); Sample: 3"(("")); Sample 4: (("""")); Sample : 5 (("""")); Sample 6: ((""""))
+
+Sample 1: 
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        24/12/2024________________________
+(d) Case Number:        EC2412001________________________
+
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:            CTXOTC013__________________________
+2.2. Full Name: HR Settlement Services Pty Ltd_____________
+2.3 Profile Summary
+"The customer HR Settlement Services Pty Ltd (UID: CTXOTC013), ABN 88652414661, was onboarded on 17 December 2024. 
+Account opening purpose was stated as Digital Currency Exchange and expected trading volume is listed as $1,000,000 and over AUD (per month), where the company annual income is over $50 million as per onboarding document. An open media search reveals no adverse media for the customer. David Wright appears to be the BO of HR Settlement Services Pty Ltd, where David Wright and Steven Milburn are the directors of the company. No adverse media was identified for the related parties while conducting open media searches."
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+N/A
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 17 December 2024, until and 23 December 2024, HR Settlement Services Pty Ltd conducted a total of $3.63 million AUD in deposits and withdrawals amounting to 2.24 million USDT and 0.31 BTC. The transactions follow a pattern of high-value AUD deposits immediately converted to cryptocurrency, with consistent use of a single beneficiary wallet for USDT withdrawals.
+
+Deposit:
+
+The deposits, totaling $3.63 million AUD, ranged between $40,000 AUD and $709,980 AUD. All deposits were from HR Settlement Services Pty Ltd and converted into USDT and BTC at exchange rates fluctuating between 1.5715 and 1.6084 AUD/USDT. Elliptic screening and World-Check results indicate no adverse findings, with funds originating from legitimate sources.
+
+Withdrawals:
+
+Withdrawals included 2.24 million USDT sent to wallet 0x833AC670FaCCb387BE0783D34C5173995a80BBf5 and 0.31 BTC to wallet bc1qe6qlkmq7vsvj2fpmv8e4z24npl8hngt4j6kksw. The BTC transaction reflected a notably high exchange rate of 159054.8 AUD/BTC. Elliptic screening did not identify risks for these wallets, though the BTC transaction originating from an unidentified wallet warrants further review to ensure compliance.
+"
+
+Additional Information: 
+Chief Compliance Officer: "I have background to David Wright in discussion with Tim, our lawyer today 19 Dec 2024.  Tim introduced David Wright to CTG as customer and investor.  David is also Tim's client in the digital industry.  In this context, Tim has made it clear that he represents us and not David.  David's previous firm Adelphus specialised in criminal defence law which explained the 'odd' names popping up in the news.  The firm has subsequently closed down after David left the firm.  David now has his own company HR Settlement, a remittance company which remits funds from the UK to AU.  At this stage I am comfortable with Tim's explanation."
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer is an OTC customer thus no IP information is available.
+___________________________________
+8. Reccomendation
+"Based on our analysis on HR Settlement Services Pty Ltd (UID: CTXOTC013) conducted multiple AUD deposits followed by USDT and BTC withdrawals where the majority of them were sourced from an external whitelisted bank account. However, the SOF and SOW needs to be collected. Thus recommending to continue the relationship as a high risk customer (HRC) and request RFI at this stage.
+
+No RFI is being sent out as the CCO is comfortable with the explanation provided above. The customer will be re-escalated if activity intensifies.
+
+
+Sample 2: 
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        24/09/2024________________________
+(d) Case Number:        EC2409003________________________
+
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:            256__________________________
+2.2. Full Name: Zijing Xu_____________
+2.3 Profile Summary
+"The customer Zijing Xu (UID: 256), aged 36 years, was onboarded on 10 July 2023. The customer declared SOF as Wages/Salary. 
+Account opening purpose was stated as OTC. An open media search reveals no adverse media for the customer. XU appears to be an employee of SHIFT QUANTUM PTE. LTD., where Kwan Yong Hua is the BO of the company. No adverse media was identified for the entities while conducting open media searches."
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+N/A
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 10 July 2023 until 30 September 2024, there have been a total of 34 USDT deposits totaling 1,012,502.76 USDT. A total of 13 OTC withdrawals totaling USD $613,881.64; 23 AUD withdrawals totalling $508,500  and 2 crypto withdrawals totaling 60,000 USDT.
+ 
+The frequency of transactions shows the customer conducted multiple USDT deposits ranging from 1.5 to 100,500 USDT, followed by immediate withdrawals to USD, AUD and USDT.
+Deposit:
+The majority of the funds were sourced from crypto exchanges including CoinW, OKX and Binance. This includes: 
+Majority of the crypto deposits are from known crypto exchanges and appears to be clean in Elliptic.
+One deposit valued USDT 100,500 on 13 November 2023 from wallet address (0xf92de997f29d55d87323ac8fdf95108aca40c6c3) with tx hash: 0x04156c6951f55eeb74d6993ce3a8c17445e9bfa5d5922db6a7918aa52dc6e6f5 was originated from an unknown wallet, where majority of the funds are sourced from various exchanges including CoinW, Binance, OKX, HTX, and decentralised exchange including Uniswap and Tokenlon
+
+One deposit valued USDT 100,000 on 30 November 2023 from wallet address
+ (TQJUzV84KdtVYALQVo5roDWehdKS1cPW4d) with tx hash: a8827a1a5af83235edf73b098652290295d5c979f1ec4525e1302bc4e41ac044 was originated from OKX.
+
+One deposit valued 50,000 USDT on 29 February 2024 from wallet address
+ (TXkRVTUYyNJrDRgkvGVzJtXZr78YvE7HjP) with tx hash: 28571af65eda235978bde65f16ea109e518e25b3a9d80811a6c79269fe2b08a8 was originated from an unknown wallet, where majority of the funds are sourced from various exchanges including CoinW, Binance, OKX, HTX, and Hoo.
+
+Withdrawals:
+
+The deposited funds were withdrawn to Commonwealth Bank of Australia account 063408 10722743 and multiple crypto wallet addresses, this includes:
+
+One AUD withdrawal valued 120,000 on 27 November 2023 to Commonwealth Bank of Australia account 063408 10722743 with reference 2023112711141472013311
+
+One withdrawal valued 50,000 USDT on 23 September 2024 to wallet address (TXkRVTUYyNJrDRgkvGVzJtXZr78YvE7HjP) held by OKX with tx hash: f499abee7b1544080fae4f06e9bed6bf63539ca4143b03a94d5e7e3d1ee4dad4
+
+13 OTC withdrawals into USD bank account (to be checked with Alan); also to check with Mukesh (why it was not picked up)
+
+Req Shan to conduct KYC refresh
+
+"
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer account has recorded a total of 29 different IP locations, where all the IP logins are from Australia, Singapore, Malaysia, Maldives, Canada, Japan, Hong Kong and the United States. The customer's registered address is in Singapore and provided identification is from China and Singapore.
+___________________________________
+8. Reccomendation
+Based on our analysis on Zijing Xu (UID: 256) conducted multiple USDT deposits followed by AUD, USD, and USDT withdrawals where the majority of them were sourced from various crypto exchanges including CoinW, OKX and Binance. However, the SOF and SOW needs to be collected along with KYC refresh. Thus recommending to continue the relationship as a high risk customer (HRC) and request RFI at this stage.
+
+
+Sample 3:
+
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        24/09/2024________________________
+(d) Case Number:        EC2409002________________________
+
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:            4905__________________________
+2.2. Full Name:        Yiping Yao_______________
+2.3 Profile Summary
+"The customer Yiping Yao (UID: 4905), aged 37 years, was onboarded on 26 March 2024. The customer declared SOF as Wages/Salary, and SOW as Accumulated Savings. 
+Account opening purpose was stated as Trading and expected trading volume was declared as Between 10,000 to 30,000 AUD per month. An open media search reveals no adverse media for the customer. "
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+Beijing Wulian Technology Co. Ltd. (UID: 5707)
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 26 March 2024 until 24 September 2024, there have been a total of 4 BTC deposits totaling 4.33 BTC, 7 ETH deposits totaling 283.97 ETH, and 3 USDT deposits totaling 140,100 USDT. And a total of 5 BTC withdrawals totaling 6.16 BTC, 5 ETH withdrawals totaling 144.49 ETH and 3 USDT withdrawals totaling 349,600.35.
+ 
+The frequency of transactions shows the customer conducted multiple ETH deposits ranging from 21.87 to 62.96 ETH (approx.), followed by immediate withdrawals to USDT ranging from 82k to 150k USDT and BTC ranging from 0.15 to 2.63 BTC.
+Deposit:
+The majority of the funds were sourced from crypto exchanges including OKX and Binance. This includes: 
+One deposit valued 62.96 ETH on 28 August 2024 from wallet address (0xf7858da8a6617f7c6d0ff2bcafdb6d2eedf64840) with tx hash: 0x59136461d146e803827860d6d6678a2450bc269a7521561d1cc3cf03918a18db was originated from OKX.
+
+One deposit valued 1.44 BTC on 13 September 2024 from wallet address
+ (366izV2s7DpAg9qtUur8qWnsK9vqUS9BEv) with tx hash: 371cfa834d14be9f726af34dfc2b1bba742b92f17416f7c7c546b11e1f37d0d8 was originated from OKX.
+
+One deposit valued 80,000 USDT on 20 August 2024 from wallet address
+ (0x21a31ee1afc51d94c2efccaa2092ad1028285549) with tx hash: 0xbef2cd1255796cf6b538461e9deca74a73c3e4c6b04649a876f80b4e1ce261fa was originated from Binance.
+
+Withdrawals:
+
+The deposited funds were withdrawn into multiple wallet addresses, this includes:
+
+One withdrawal valued 2.63 BTC on 29 August 2024 to wallet address (3MtkGVJw5bw9nLgwxoictJYux8vFb7GmtD) held by OKX with tx hash: 3Pw6F3c4MXFFbPHRZCUP9a7HysyXPrprpm
+
+One withdrawal valued 57.99 ETH on 4 Sep 2024 to wallet address (0x9c3e42b21cdc375b9288446e648d383e022e7442) held by OKX with tx hash: 0x9e9136d34d7c7d5008f63ef3369165b10893d763cbf679ea311dfd66165e9ddd
+
+One withdrawal valued 150,004 USDT on 10 September 2024 to wallet address (0x9c3e42b21cdc375b9288446e648d383e022e7442) held by OKX with tx hash: 0xc8ee8b9ba5ed6280701845678e719c4c62e450299702dfe81110ce03204fd222
+
+"
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer account has recorded a total of 3 different IP locations (104.199.167.154-Taiwan, 34.81.223.92-Taiwan, 35.221.242.78-Taiwan), where all the IP logins are using VPN and the customer registered address is in China.
+___________________________________
+8. Reccomendation
+Based on our analysis on Yiping Yao (UID 4905) conducted multiple crypto deposits followed by USDT, ETH and BTC withdrawals where the majority of them were sourced from a crypto exchange-OKX and Binance, which closely aligned with customer profile and behavioural analysis. Thus recommending to continue the relationship as a high risk customer (HRC) and re-review in 12 months time.
+
+Sample 4:
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        01/10/2024________________________
+(d) Case Number:        EC2410001________________________
+
+2. Customer Profile
+Inherent Customer risk rating : Unavailable
+2.1.   User_id:            4901__________________________
+2.2. Full Name: JUNIOR NINE PTY LTD_____________
+2.3 Profile Summary
+"The customer JUNIOR NINE PTY LTD (UID: 4901), was onboarded on 25 March 2024. The customer declared SOW as Accumulated Savings, and SOF as Business Proceeds. 
+Account opening purpose was stated as Investment and Trading; and expected trading volume as Over 30,000 AUD per month. An open media search reveals no adverse media for the customer and BO (Yichen Shao)."
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+Authorised representative is the BO of  WXD Projects Pty Ltd (A.C.N - 635384324)
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 25 March 2024 until 4 October 2024, there have been a total of 34 USDT deposits totaling 1,012,502.76 USDT. A total of 13 OTC withdrawals totaling USD $613,881.64; 23 AUD withdrawals totalling $508,500  and 2 crypto withdrawals totaling 60,000 USDT.
+ 
+The frequency of transactions shows the customer conducted multiple USDT deposits ranging from 1.5 to 100,500 USDT, followed by immediate withdrawals to USD, AUD and USDT.
+Deposit:
+The majority of the funds were sourced from crypto exchanges including CoinW, OKX and Binance. This includes: 
+Majority of the crypto deposits are from known crypto exchanges and appears to be clean in Elliptic.
+One deposit valued USDT 100,500 on 13 November 2023 from wallet address (0xf92de997f29d55d87323ac8fdf95108aca40c6c3) with tx hash: 0x04156c6951f55eeb74d6993ce3a8c17445e9bfa5d5922db6a7918aa52dc6e6f5 was originated from an unknown wallet, where majority of the funds are sourced from various exchanges including CoinW, Binance, OKX, HTX, and decentralised exchange including Uniswap and Tokenlon
+
+One deposit valued USDT 100,000 on 30 November 2023 from wallet address
+ (TQJUzV84KdtVYALQVo5roDWehdKS1cPW4d) with tx hash: a8827a1a5af83235edf73b098652290295d5c979f1ec4525e1302bc4e41ac044 was originated from OKX.
+
+One deposit valued 50,000 USDT on 29 February 2024 from wallet address
+ (TXkRVTUYyNJrDRgkvGVzJtXZr78YvE7HjP) with tx hash: 28571af65eda235978bde65f16ea109e518e25b3a9d80811a6c79269fe2b08a8 was originated from an unknown wallet, where majority of the funds are sourced from various exchanges including CoinW, Binance, OKX, HTX, and Hoo.
+
+Withdrawals:
+
+The deposited funds were withdrawn to Commonwealth Bank of Australia account 063408 10722743 and multiple crypto wallet addresses, this includes:
+
+One AUD withdrawal valued 120,000 on 27 November 2023 to Commonwealth Bank of Australia account 063408 10722743 with reference 2023112711141472013311
+
+One withdrawal valued 50,000 USDT on 23 September 2024 to wallet address (TXkRVTUYyNJrDRgkvGVzJtXZr78YvE7HjP) held by OKX with tx hash: f499abee7b1544080fae4f06e9bed6bf63539ca4143b03a94d5e7e3d1ee4dad4
+
+13 OTC withdrawals into USD bank account (to be checked with Alan); also to check with Mukesh (why it was not picked up)
+
+Req Shan to conduct KYC refresh
+
+"
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer account has recorded a total of 17 different IP locations, where all the IP logins are from Australia, Malaysia, UAE, UK and Romania. Most of the IP logins are from UAE and few VPN logins were also identified (Australia, UK, and Romania). The customer's registered address is in Sydney, Australia and provided IDs are from Australia and China (BO's passport).
+___________________________________
+8. Reccomendation
+Based on our analysis on Zijing Xu (UID: 256) conducted multiple USDT deposits followed by AUD, USD, and USDT withdrawals where the majority of them were sourced from various crypto exchanges including CoinW, OKX and Binance. However, the SOF and SOW needs to be collected along with KYC refresh. Thus recommending to continue the relationship as a high risk customer (HRC) and request RFI at this stage.
+
+
+Sample 5
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        24/09/2024________________________
+(d) Case Number:        EC2409002________________________
+
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:            4905__________________________
+2.2. Full Name:        Yiping Yao_______________
+2.3 Profile Summary
+"The customer Yiping Yao (UID: 4905), aged 37 years, was onboarded on 26 March 2024. The customer declared SOF as Wages/Salary, and SOW as Accumulated Savings. 
+Account opening purpose was stated as Trading and expected trading volume was declared as Between 10,000 to 30,000 AUD per month. An open media search reveals no adverse media for the customer. "
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+Beijing Wulian Technology Co. Ltd. (UID: 5707)
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 26 March 2024 until 24 September 2024, there have been a total of 4 BTC deposits totaling 4.33 BTC, 7 ETH deposits totaling 283.97 ETH, and 3 USDT deposits totaling 140,100 USDT. And a total of 5 BTC withdrawals totaling 6.16 BTC, 5 ETH withdrawals totaling 144.49 ETH and 3 USDT withdrawals totaling 349,600.35.
+ 
+The frequency of transactions shows the customer conducted multiple ETH deposits ranging from 21.87 to 62.96 ETH (approx.), followed by immediate withdrawals to USDT ranging from 82k to 150k USDT and BTC ranging from 0.15 to 2.63 BTC.
+Deposit:
+The majority of the funds were sourced from crypto exchanges including OKX and Binance. This includes: 
+One deposit valued 62.96 ETH on 28 August 2024 from wallet address (0xf7858da8a6617f7c6d0ff2bcafdb6d2eedf64840) with tx hash: 0x59136461d146e803827860d6d6678a2450bc269a7521561d1cc3cf03918a18db was originated from OKX.
+
+One deposit valued 1.44 BTC on 13 September 2024 from wallet address
+ (366izV2s7DpAg9qtUur8qWnsK9vqUS9BEv) with tx hash: 371cfa834d14be9f726af34dfc2b1bba742b92f17416f7c7c546b11e1f37d0d8 was originated from OKX.
+
+One deposit valued 80,000 USDT on 20 August 2024 from wallet address
+ (0x21a31ee1afc51d94c2efccaa2092ad1028285549) with tx hash: 0xbef2cd1255796cf6b538461e9deca74a73c3e4c6b04649a876f80b4e1ce261fa was originated from Binance.
+
+Withdrawals:
+
+The deposited funds were withdrawn into multiple wallet addresses, this includes:
+
+One withdrawal valued 2.63 BTC on 29 August 2024 to wallet address (3MtkGVJw5bw9nLgwxoictJYux8vFb7GmtD) held by OKX with tx hash: 3Pw6F3c4MXFFbPHRZCUP9a7HysyXPrprpm
+
+One withdrawal valued 57.99 ETH on 4 Sep 2024 to wallet address (0x9c3e42b21cdc375b9288446e648d383e022e7442) held by OKX with tx hash: 0x9e9136d34d7c7d5008f63ef3369165b10893d763cbf679ea311dfd66165e9ddd
+
+One withdrawal valued 150,004 USDT on 10 September 2024 to wallet address (0x9c3e42b21cdc375b9288446e648d383e022e7442) held by OKX with tx hash: 0xc8ee8b9ba5ed6280701845678e719c4c62e450299702dfe81110ce03204fd222
+
+"
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer account has recorded a total of 3 different IP locations (104.199.167.154-Taiwan, 34.81.223.92-Taiwan, 35.221.242.78-Taiwan), where all the IP logins are using VPN and the customer registered address is in China.
+___________________________________
+8. Reccomendation
+Based on our analysis on Yiping Yao (UID 4905) conducted multiple crypto deposits followed by USDT, ETH and BTC withdrawals where the majority of them were sourced from a crypto exchange-OKX and Binance, which closely aligned with customer profile and behavioural analysis. Thus recommending to continue the relationship as a high risk customer (HRC) and re-review in 12 months time.
+
+Sample 6:
+1. Analysis and Review
+
+1.(i) Analysed By:
+(a) Name:     Mo________________________
+(b) Position: Compliance Officer________________________
+(c) Date:        24/09/2024________________________
+(d) Case Number:        EC2409001________________________
+
+2. Customer Profile
+Inherent Customer risk rating :
+2.1.   User_id:              5707__________________________
+2.2. Full Name:        Beijing Wulian Technology Co. Ltd._______________
+2.3 Profile Summary
+"The customer Beijing Wulian Technology Co. Ltd. (UID: 5707), was onboarded on 13 August 2024. The customer declared SOF as Wages/Salary 2.Business Proceeds, and SOW as Sale of Property/business. 
+Account opening purpose was stated as Trading and expected trading volume was declared as Over 30,000 AUD per month. An open media search reveals no adverse media for the customer. "
+___________________________________
+
+3. Customer is PEP (Y/N) 
+No___________________________________
+4. Sanctioned Customer (Y/N) 
+No
+5. Related Party: 
+Yiping Yao (UID: 4905)
+6. Transaction Analysis
+Transaction Analysis:
+"Since then account creation date on 13 August 2024 until 24 September 2024, there have been a total of 5 BTC deposits totaling 8.789 BTC, 6 ETH deposits totaling 72.53 ETH, and 3 USDT deposits totaling 313751.75 USDT. And a total of 4 BTC withdrawals totaling 6.79 BTC, 4 ETH withdrawals totaling 104.048 ETH and 4 USDT withdrawals totaling 288136.67.
+ 
+The frequency of transactions shows the customer conducted multiple BTC deposits ranging from 0.9 to 2.8 BTC (approx.), followed by immediate withdrawals to USDT ranging from 53k to 100k USDT and ETH ranging from 6.68 to 39.7 ETH.
+Deposit:
+The majority of the funds were sourced from crypto exchanges including OKX. This includes: 
+One deposit valued 23.01 ETH on 12 Sep 2024 from wallet address (0xf7858da8a6617f7c6d0ff2bcafdb6d2eedf64840) with tx hash: 0x312b1b09c13347c821560f5f7f70a0a52939c8399f08590f96f27486e514a04b was originated from OKX.
+
+One deposit valued 2.82 BTC on 20 Aug 2024 from wallet address
+ (bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d) with tx hash: 75513df86bf1e741504fb67b2a7b0b8a4edb7179ecc642448b19f48f59597325 was originated from OKX.
+
+One deposit valued 125000 USDT on 5 Sep 2024 from wallet address
+ (TM1zzNDZD2DPASbKcgdVoTYhfmYgtfwx9R) with tx hash: 78a5fc911795fba58563518ac27fad37e733574b1753fb6ebe2a898c42077c51 was originated from OKX.
+
+Withdrawals:
+
+The deposited funds were withdrawn into multiple wallet addresses:
+
+One withdrawal valued 2.15 BTC on 5 Sep 2024 to wallet address (3MtkGVJw5bw9nLgwxoictJYux8vFb7GmtD) held by OKX with tx hash: 67e790b6e6cd280facfbc609be78d554c7a43abb1531af14d35b5e7694a07fcd
+
+One withdrawal valued 39.7 ETH on 9 Sep 2024 to wallet address (0x25bbce9e8e5092e674bfa3070498d440e2c01b18) held by OKX with tx hash: 0x596736c46a69e1a9e8d54adb7c1093dfab4ca9e0c46436491ecabb0f46dae61b
+
+One withdrawal valued 100002 USDT on 29 Aug 2024 to wallet address (TCpAs7xooyxgKX7RnNg2RgaMGV5qF8wiB1) held by OKX with tx hash: 91a4a038ce48e4892eee6e37d383e399f273cb9ff19726a96f7a28f0fbd2e7d3
+
+"
+
+7. Behavioral Analysis
+Behavioral Analysis
+The customer account has recorded a total of 3 different IP locations (34.92.165.200-Hong Kong, 82.157.97.76-China, 81.70.229.32-China), where the customer registered address is in Beijing, China.
+___________________________________
+8. Reccomendation
+Based on our analysis on Beijing Wulian Technology Co. Ltd. (UID 5707) conducted multiple crypto deposits followed by USDT, ETH and BTC withdrawals where the majority of them were sourced from a crypto exchange-OKX, which closely aligned with customer profile and behavioural analysis. Thus recommending to continue the relationship as a high risk customer (HRC) and re-review in 12 months time.
+
+
+
+
+
+
