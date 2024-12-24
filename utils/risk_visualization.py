@@ -24,36 +24,88 @@ def create_risk_gauge(risk_score, title="Overall Risk Score"):
                 'thickness': 0.75,
                 'value': 90
             }
-        }
+        },
+        hovertemplate=(
+            "<b>Risk Score</b>: %{value:.1f}<br>" +
+            "<b>Status</b>: %{customdata}<br>" +
+            "<b>Threshold</b>: 90<br>" +
+            "<extra></extra>"  # This removes the secondary box
+        ),
+        customdata=[
+            "High Risk" if risk_score >= 70
+            else "Medium Risk" if risk_score >= 30
+            else "Low Risk"
+        ]
     ))
-    
-    fig.update_layout(height=250)
+
+    fig.update_layout(
+        height=250,
+        hoverlabel=dict(
+            bgcolor="white",
+            font_size=12,
+            font_family="Arial"
+        )
+    )
     return fig
 
 def create_compliance_timeline(compliance_data):
     """Create an animated timeline of compliance metrics."""
     fig = go.Figure()
-    
+
     # Add traces for different compliance metrics
-    for metric in compliance_data.columns:
-        if metric != 'date':
+    metrics_info = {
+        'kyc_score': {
+            'name': 'KYC Compliance',
+            'description': 'Know Your Customer compliance score'
+        },
+        'monitoring_score': {
+            'name': 'Transaction Monitoring',
+            'description': 'Real-time transaction monitoring effectiveness'
+        },
+        'reporting_score': {
+            'name': 'Regulatory Reporting',
+            'description': 'Timely and accurate regulatory reporting compliance'
+        }
+    }
+
+    for metric, info in metrics_info.items():
+        if metric in compliance_data.columns and metric != 'date':
             fig.add_trace(go.Scatter(
                 x=compliance_data['date'],
                 y=compliance_data[metric],
-                name=metric,
-                mode='lines+markers'
+                name=info['name'],
+                mode='lines+markers',
+                hovertemplate=(
+                    f"<b>{info['name']}</b><br>" +
+                    "Date: %{x|%Y-%m-%d}<br>" +
+                    "Score: %{y:.1f}<br>" +
+                    f"<i>{info['description']}</i><br>" +
+                    "<extra></extra>"
+                )
             ))
-    
+
     fig.update_layout(
         title="Compliance Metrics Timeline",
         xaxis_title="Date",
         yaxis_title="Compliance Score",
-        hovermode='x unified'
+        hovermode='closest',
+        hoverlabel=dict(
+            bgcolor="white",
+            font_size=12,
+            font_family="Arial"
+        )
     )
     return fig
 
 def create_risk_heatmap(risk_factors):
     """Create a heatmap of risk factors."""
+    risk_descriptions = {
+        'volume_risk': 'Risk based on transaction volume patterns',
+        'frequency_risk': 'Risk based on transaction frequency',
+        'concentration_risk': 'Risk based on concentration of transactions',
+        'structuring_risk': 'Risk of potential structuring activity'
+    }
+
     fig = go.Figure(data=go.Heatmap(
         z=[[risk_factors[factor]] for factor in risk_factors],
         y=list(risk_factors.keys()),
@@ -63,13 +115,25 @@ def create_risk_heatmap(risk_factors):
             [0.5, 'yellow'],
             [1, 'red']
         ],
-        showscale=True
+        showscale=True,
+        hovertemplate=(
+            "<b>Risk Factor</b>: %{y}<br>" +
+            "<b>Score</b>: %{z:.1f}<br>" +
+            "<b>Description</b>: %{customdata}<br>" +
+            "<extra></extra>"
+        ),
+        customdata=[[risk_descriptions.get(factor, 'Risk factor')] for factor in risk_factors]
     ))
-    
+
     fig.update_layout(
         title="Risk Factors Heatmap",
         height=400,
-        yaxis={'tickangle': 0}
+        yaxis={'tickangle': 0},
+        hoverlabel=dict(
+            bgcolor="white",
+            font_size=12,
+            font_family="Arial"
+        )
     )
     return fig
 
