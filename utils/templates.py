@@ -19,14 +19,51 @@ ___________________________________
 4. Sanctioned Customer (Y/N) 
 {is_sanctioned}
 5. Related Party: 
-N/A
+{related_party}
 6. Transaction Analysis
 Transaction Analysis:
 {transaction_analysis}
+
+Additional Information:
+{additional_info}
 
 7. Behavioral Analysis
 {behavioral_analysis}
 ___________________________________
 8. Recommendation
-Based on our analysis, recommending to continue monitoring as a high-risk customer (HRC) and conduct periodic reviews.
+{recommendation}
+"""
+
+SMR_TEMPLATE = """SUSPICIOUS MATTER REPORT
+
+1. Reporting Entity Information
+Entity Name: {reporting_entity}
+Report Date: {report_date}
+Reference Number: {reference_number}
+Priority: {priority}
+
+2. Suspect Details
+{suspect_details}
+
+3. Suspicious Activity Description
+{suspicious_activity}
+
+4. Transaction Details
+{transaction_details}
+
+5. Supporting Documentation
+{supporting_docs}
+
+6. Risk Assessment
+Risk Level: {risk_level}
+Rationale: {risk_rationale}
+
+7. Action Taken
+{action_taken}
+
+8. Recommendations
+{recommendations}
+
+Report Generated: {generated_date}
+Report Status: {status}
 """
