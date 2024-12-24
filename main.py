@@ -35,6 +35,16 @@ from utils.risk_visualization import (
     calculate_risk_indicators,
     generate_compliance_metrics
 )
+from utils.training_module import TrainingModule
+
+TRAINING_CATEGORIES = [
+    "Transaction Monitoring",
+    "Customer Due Diligence",
+    "Suspicious Matter Reporting",
+    "Risk Assessment",
+    "Regulatory Reporting"
+]
+
 
 st.set_page_config(page_title="AML/CTF Case Management System", layout="wide")
 
@@ -44,7 +54,7 @@ def main():
     # Sidebar navigation
     page = st.sidebar.selectbox(
         "Select Module",
-        ["ECDD Generator", "Transaction Monitoring", "Suspicious Matter Reports", "Case Management"]
+        ["ECDD Generator", "Transaction Monitoring", "Suspicious Matter Reports", "Case Management", "Training Module"]
     )
 
     if page == "ECDD Generator":
@@ -53,6 +63,8 @@ def main():
         display_transaction_monitoring()
     elif page == "Suspicious Matter Reports":
         display_smr_generator()
+    elif page == "Training Module":
+        display_training_module()
     else:
         display_case_management()
 
@@ -547,6 +559,92 @@ def display_case_management():
 
     # Display cases in a table
     st.dataframe(pd.DataFrame(cases))
+
+
+def display_training_module():
+    st.header("Interactive Compliance Training")
+
+    # Initialize training module in session state
+    if 'training_module' not in st.session_state:
+        st.session_state['training_module'] = TrainingModule()
+
+    # Display progress if training has started
+    if st.session_state['training_module'].scenarios_completed > 0:
+        progress = st.session_state['training_module'].get_progress()
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            st.metric("Scenarios Completed", progress['completed'])
+        with col2:
+            st.metric("Correct Answers", progress['score'])
+        with col3:
+            st.metric("Success Rate", f"{progress['percentage']:.1f}%")
+
+    # Category selection
+    category = st.selectbox("Select Training Category", 
+                          ["Random"] + TRAINING_CATEGORIES)
+
+    # Generate new scenario
+    if st.button("Generate New Scenario"):
+        with st.spinner("Generating scenario..."):
+            scenario = st.session_state['training_module'].generate_scenario(
+                category if category != "Random" else None
+            )
+            if 'error' in scenario:
+                st.error(scenario['error'])
+            else:
+                st.session_state['current_scenario'] = scenario
+
+    # Display current scenario
+    if 'current_scenario' in st.session_state:
+        scenario = st.session_state['current_scenario']
+
+        # Scenario details
+        st.subheader("Scenario")
+        st.write(scenario['scenario'])
+
+        # Red flags
+        st.subheader("Red Flags to Consider")
+        for flag in scenario['red_flags']:
+            st.markdown(f"- {flag}")
+
+        # Question and options
+        st.subheader("What action should be taken?")
+        user_answer = st.radio(
+            scenario['question'],
+            options=scenario['options'],
+            key="scenario_response"
+        )
+
+        # Submit and evaluate
+        if st.button("Submit Answer"):
+            answer_index = scenario['options'].index(user_answer)
+            result = st.session_state['training_module'].evaluate_response(answer_index)
+
+            if result['correct']:
+                st.success("✅ Correct!")
+            else:
+                st.error("❌ Incorrect")
+
+            st.write("Explanation:", result['explanation'])
+
+            # Show performance analysis after multiple scenarios
+            if st.session_state['training_module'].scenarios_completed >= 3:
+                st.subheader("Performance Analysis")
+                analysis = st.session_state['training_module'].analyze_performance()
+
+                if 'error' not in analysis:
+                    st.write(f"Performance Level: {analysis['performance_level']}")
+                    st.write("Analysis:", analysis['analysis'])
+
+                    st.subheader("Recommendations")
+                    for rec in analysis['recommendations']:
+                        st.markdown(f"- {rec}")
+
+                    st.subheader("Focus Areas")
+                    for area in analysis['focus_areas']:
+                        st.markdown(f"- {area}")
+
+
 
 if __name__ == "__main__":
     main()
