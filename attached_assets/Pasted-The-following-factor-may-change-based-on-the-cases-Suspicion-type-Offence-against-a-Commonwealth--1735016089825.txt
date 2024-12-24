@@ -1,0 +1,591 @@
+The following factor may change based on the cases
+Suspicion type: Offence against a Commonwealth, State or Territory Law
+
+Customer Name
+Company name
+Suspicion reason
+Suspicion dates, Suspicion intensity and behaviour
+Transaction information should exactly reflect transaction monitoring and ECDD information. so does the IP and other behavioural information.
+
+Sample Ground for suspicion (GFS):
+GFS 1: 
+This report is in relation to suspicion for Person/agent is not who they claim to be related to Cloudtech X customer Bohyung LEE for Internet fraud, and Unusual account activity. It appears that the above-mentioned customer’s identity might have been used to attempt to transfer funds or fraudulent origin. 
+
+ 
+
+Customer Profile: 
+
+Cobweb Pay account UDP187553 in the name of Bohyung LEE, aged 34 years, was opened on 8 November 2023. Source of funds was selected as Retirement Income, and Business Income. Account opening purpose is selected as Trading, and Online Shopping.  
+
+ 
+
+Transaction Analysis: 
+
+Transaction review of Cobweb Pay account UDP187553 since account opening on 8 November 2023 till 16 April 2024 reveals that a total of $10,746 was deposited followed by rapid purchases and withdrawals of cryptocurrencies within few days. 
+
+On 11 and 12 April 2024, Cloudtech X received multiple third-party request from Monoova pertaining to fraudulent transactions related to jobs and employment scam. Upon investigation into LEE‘s Cobweb Pay account UDP187553 reveals that: 
+
+• One domestic electronic fund transfer of $1,880 from Bendigo and Adelaide Bank Limited account 633000 149873739 in the name of Bohyung LEE to Cobweb Pay account UDP187553 on 27 November 2023 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number 2023112715151022843093. 
+
+ 
+
+Cloudtech X system shows that all the funds were transferred to two crypto wallet addresses (TGpeQAy6deuEjREfzvNv739Tagzc29dqyM), (TQ4F2nufbAP7EpLwB3o62ARia6FRFZtbCW), (TNeH5nFDGiTGStSt62amFvmeVbvYnf95Ts), and (TBNecie77BRTYWwJQvyVzKBV1cq37Yz4YF).  
+
+  
+
+Conclusion: 
+
+It was reported by Monoova that the account held by Bohyung LEE is the recipient of funds of fraud origin totalling $1,880 which are subjected to fraudulent investigations related to jobs and employment scam. 
+
+The accounts held by LEE is unusual because a Domestic Electronic Fund Transfer was conducted followed by rapid purchase of cryptocurrency and withdrawal within few days.  
+
+In addition to that all IP addresses used by LEE’s accounts were located only within Malaysia whereas his identification is from Australia, which further adds to the suspicion. 
+
+ 
+
+
+GFS 2: 
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory law related to Cloudtech X customer Jay James Greenan for False name/identity or documents, and Unusual account activity. It appears that the above-mentioned customer provided a fraudulent document to open an account. 
+
+ 
+
+Customer Profile: 
+
+Cobweb Pay account UVB115055 in the name of Jay James Greenan, aged 23 years, was opened on 30 August 2024. Source of funds was selected as Wages/Salary, Source of wealth was selected as Accumulated Savings. Account opening purpose is selected as Investment, and Trading.  
+
+ 
+
+Suspicious Activity: 
+
+Cloudtech X system shows that the customer requested to whitelist a National Australia Bank Limited account 084115 661171288 but provided an ANZ Access Advantage Statement with account number 084115 757903660, where the account number doesn’t match, and the BSB belongs to a different bank. Adding to that the account number and BSB appears to be photoshopped and added to the statement. 
+
+  
+
+Conclusion: 
+
+Based on the documents provided by Jay James Greenan it is evident that the customer provided forged documents to open Cobweb Pay account UVB115055. 
+
+In addition to that all IP addresses used by Greenan’s accounts were located within Australia and United Kingdom, where some of the IP logins were minutes apart from different countries, which further adds to the suspicion. 
+
+
+GFS 3: 
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customers Andrej Micheal DESPOT and Nicole Theresa MATHESON for Internet fraud, Unusual account activity, and Inconsistent with customer profile; where both the parties are related based on using same destination crypto wallet address (0xF9beB9a35D2e7e8EaB7373D08147cE8Bade5D27f). 
+
+  
+
+Customer Profile: 
+
+Andrej Micheal DESPOT aged 33 years, opened his Cobweb Pay account on 24 January 2024. DESPOT provided his Source of funds as Wages/salary. DESPOT also mentioned that he opened the Cloudtech X account for Investment purposes. 
+
+ 
+
+Nicole Theresa MATHESON aged 45 years, opened her Cobweb Pay account on 21 January 2024. MATHESON provided her Source of funds as Wages/salary. MATHESON also mentioned that she opened the Cloudtech X account for Investment purposes. 
+
+  
+
+Transaction Analysis: 
+
+Andrej Micheal DESPOT 
+
+Transaction review of Cobweb Pay account UXT442795 since account opening on 24 January 2024 till 8 February 2024 reveals that DESPOT conducted multiple deposits totalling $50,196 followed by rapid purchases and withdrawals of cryptocurrencies between 24 and 30 January 2024. 
+
+On 6 February 2024, Cloudtech X received multiple third-party requests from Monoova pertaining to fraudulent transactions related to an impersonation scam. Upon investigation into DESPOT ‘s Cobweb Pay account UXT442795 reveals that between 24 and 30 January 2024 in excess of $50,196 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $4 from HSBC Bank Australia Limited account 342251 176756412 in the name of NICOLE THERESA MATHESON to Cobweb Pay account UXT442795 on 30 January 2024 with reference number P23B85F64 
+
+• One domestic electronic fund transfer of $25,000 from HSBC Bank Australia Limited account 342251 173647412 in the name of ANDREJ MICHEAL DESPOT to Cobweb Pay account UXT442795 on 1 February 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number D00184796361 
+
+• One domestic electronic fund transfer of $25,000 from HSBC Bank Australia Limited account 342251 173647412 in the name of ANDREJ MICHEAL DESPOT to Cobweb Pay account UXT442795 on 1 February 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number D00184796374 
+
+ 
+
+  
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0xF9beB9a35D2e7e8EaB7373D08147cE8Bade5D27f). 
+
+  
+
+Nicole Theresa MATHESON  
+
+Transaction review of Cobweb Pay account UFX443706 since account opening on 21 January 2024 till 8 February 2024 reveals that MATHESON conducted multiple deposits totalling $239 followed by rapid purchases and withdrawals of cryptocurrencies between 23 January and 1 February 2024. 
+
+Upon investigation into MATHESON ‘s Cobweb Pay account UFX443706 reveals that between 23 January and 1 February 2024 in excess of $239 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $190 from HSBC Bank Australia Limited account 342251 176756412 in the name of NICOLE THERESA MATHESON to Cobweb Pay account UFX443706 on 24 January 2024 with reference number 3VKFARMIX 
+
+• One domestic electronic fund transfer of $49 from HSBC Bank Australia Limited account 342201 124781090 in the name of MUHAMMAD SOHAIL ASLAM to Cobweb Pay account UFX443706 on 1 February 2024 with reference number X84RTIF34 
+
+Cloudtech X system shows that all the funds were transferred to two crypto wallet addresses (0x1F1724AF9730852fE01f7Fd0E15EfE28115678D0), and (0xF9beB9a35D2e7e8EaB7373D08147cE8Bade5D27f). 
+
+ 
+
+ 
+
+Conclusion: 
+
+It was reported by Monoova that Andrej Micheal DESPOT is the recipient of funds of fraud origin totalling $50,000 which are subjected to fraudulent investigations by HSBC Bank Australia Limited. DESPOT also received third party credits from Nicole Theresa MATHESON followed by rapid purchase of cryptocurrencies. 
+
+The account activity is unusual because both DESPOT and MATHESON conducted multiple deposits from various third parties followed by rapid purchases of cryptocurrencies and withdrawal on the same day. Both of them also shares a same cryptocurrency wallet address which is indicative of potential mule or syndicate activities. 
+
+Though DESPOT resides in Victoria, Australia but received third party credits from MATHESON who resides in NSW. Australia followed by rapid purchases of cryptocurrencies and withdrawal on the same day. None of them shares same family name and has 10 years of age difference thus no personal relationships can be established which showed that the customer profile and the account activity is inconsistent. 
+
+ 
+GFS 4: 
+
+ This report is in relation to suspicion for Offence against a Commonwealth, State or Territory law related to Cloudtech X customer Joanne Victoria Bell for False name/identity or documents. It appears that the above-mentioned customer provided a fraudulent document to open an account.
+
+
+Customer Profile:
+
+Cobweb Pay account UKG912652 in the name of Joanne Victoria Bell, aged 54 years, was opened on 04 December 2024. Source of funds was selected as Wages/Salary, Source of wealth was selected as Accumulated Savings. Account opening purpose is selected as P2P.
+
+
+Suspicious Activity:
+
+Cloudtech X system shows that the customer provided a fake NSW driver license which did not had signature and failed Green id checks. Adding to that this, the driver license provided by the customer appears to be photoshopped.
+
+In addition to that, all IP addresses used by Joannel’s accounts were located within Malaysia, but appears to be VPN.
+
+
+Conclusion:
+
+Based on the documents provided by Joanne Victoria Bell it is evident that the customer provided forged documents to open Cobweb Pay account UKG912652.
+
+GFS5: 
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customer Jeffrey BANVILLE, whereby Cloudtech received a third-party request from Monoova On 30 January 2024 related to fraudulent funds. 
+
+ 
+
+Customer Profile: 
+
+Jeffrey BANVILLE (DOB 23 January 1982) currently residing in 15 Kingston Parade, Northgate South Australia 5085, Australia opened his Cobweb Pay account on 29 January 2024. BANVILLE provided his SOF as Wages/salary. BANVILLE also mentioned that he opened the Cloudtech X account for investment purposes. 
+
+ 
+
+Transaction Analysis: 
+
+It appears that just after opening the account on 29 January 2024, BANVILLE conducted multiple deposits followed by rapid purchases of cryptocurrencies. On 30 January 2024, Cloudtech X received two third-party requests from Monoova Payments Pty Ltd pertaining to two fraudulent transactions totalling $49,965 involving BANVILLE.  
+
+Transaction review of Cobweb Pay account ULC246996 since account opening on 29 January 2024 till 1 February 2024 reveals that: 
+
+In excess of $50,000 was deposited into his Cobweb Pay account between 29 January 2024 and 1 February 2024. This includes: 
+
+•	One domestic electronic fund transfer of $24,965 from HSBC Bank Australia Limited account 342099 887242090 to Cobweb Pay account ULC246996 on 30 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd 
+
+•	One domestic electronic fund transfer of $25,000 from HSBC Bank Australia Limited account 342099 887242090 to Cobweb Pay account ULC246996 on 30 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd 
+
+ 
+
+All of the funds were transferred to a crypto wallet address (0x5e98DBF23741b0e616fC4a2098dEFa0D5C7a115F) This includes: 
+
+•	1 purchase of USDT 32670.92 sent to crypto wallet address (0x5e98DBF23741b0e616fC4a2098dEFa0D5C7a115F) on 30 January 2024 
+
+ 
+
+Conclusion: 
+
+Based on the aforementioned grounds for suspicion, it is our assessment that there is a substantial risk of Offence against a Commonwealth, State or Territory Law related to Cloudtech X customer Jeffrey BANVILLE including the ones initiated by Monoova. The irregularities in transaction patterns, and rapid transfers further suggest the possibility of illicit activity. The customer account was suspended by Cloudtech X on 31 January 2024. 
+
+ 
+GFS 6: 
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customer Hudson Jacob DAGWELL for Internet fraud, Unusual account activity, and Inconsistent with customer profile. 
+
+  
+
+Customer Profile: 
+
+Hudson Jacob DAGWELL aged 24 years, opened his Cobweb Pay account on 29 January 2024. DAGWELL provided his Source of funds as Wages/salary, Investment Proceeds, Inheritance, and Business Income. MOHAMED also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+  
+
+Transaction Analysis: 
+
+Transaction review of Cobweb Pay account UIA615614 since account opening on 29 January 2024 till 12 February 2024 reveals that DAGWELL conducted multiple deposits totalling $50,066 followed by rapid purchases and withdrawals of cryptocurrencies between 29 and 30 January 2024. 
+
+On 6 February 2024, Cloudtech X received multiple third-party requests from Monoova pertaining to fraudulent transactions. Upon investigation into MOHAMED ‘s Cobweb Pay account UIA615614 reveals that between 29 and 30 January 2024 in excess of $50,066 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $24,965 from HSBC Bank Australia Limited account 342201 121860090 in the name of HASSAN MOHAMED to Cobweb Pay account UIA615614 on 30 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number 49I3LT5CE 
+
+• One domestic electronic fund transfer of $25,000 from HSBC Bank Australia Limited account 342201 121860090 in the name of HASSAN MOHAMED to Cobweb Pay account UIA615614 on 30 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number Y5Y15LO9D 
+
+• One domestic electronic fund transfer of $1 from HSBC Bank Australia Limited account 342017 326216090 in the name of EMELIA RUBY GABRIELLA JOANNA BRACEWELL to Cobweb Pay account UIA615614 on 30 January 2024 with reference number VGO5AOK0Z. It is to be noted that EMELIA was previously reported on 02/02/2024 with reference number 61279727 for similar account activity. 
+
+  
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0x2693a6BeDCb7ac612d6462e40461b5aB94713961). 
+
+  
+
+Conclusion: 
+
+It was reported by Monoova that Hudson Jacob DAGWELL is the recipient of funds of fraud origin totalling $49,965 which are subjected to fraudulent investigations by HSBC Bank Australia Limited 
+
+The account activity is unusual because Hudson Jacob DAGWELL conducted multiple deposits totalling $50,066 followed by rapid purchases of cryptocurrencies and withdrawal on the same day. In addition to that DAGWELL received funds from BRACEWELL who was previously reported for similar account activity with reference number 61279727, which further adds to the suspicion.  
+
+Moreover, DAGWELL is only 24 years old and deposited a large amount of funds within a couple of days followed by rapid withdrawals and purchase of crypto which showed that the customer profile and the account activity is inconsistent. 
+
+GFS7:
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customer Nepo Phyllis Lusik BANU for Internet fraud, Unusual account activity, and Inconsistent with customer profile. 
+
+  
+
+Customer Profile: 
+
+Nepo Phyllis Lusik BANU aged 19 years, opened his Cobweb Pay account on 22 January 2024. BANU provided his Source of funds as Investment Proceeds. BANU also mentioned that he opened the Cloudtech X account for Trading purposes. 
+
+  
+
+Transaction Analysis: 
+
+Transaction review of Cobweb Pay account UAT561399 since account opening on 22 January 2024 till 6 February 2024 reveals that BANU conducted multiple deposits totalling $20,097.5 followed by rapid purchases and withdrawals of cryptocurrencies between 25 and 29 January 2024. 
+
+On 29 January 2024, Cloudtech X received multiple third-party requests from Monoova pertaining to fraudulent transactions related to a Bank Impersonation Scam. Upon investigation into BANU’s Cobweb Pay account UAT561399 reveals that between 25 and 29 January 2024 in excess of $20,097 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $1,000 from UBank account 670864 25604717 in the name of N P Banu to Cobweb Pay account UAT561399 on 29 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number PXUBNJ60R 
+
+• One domestic electronic fund transfer of $3,995 from UBank account 670864 25604717 in the name of N P Banu to Cobweb Pay account UAT561399 on 29 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number TMOZNAAZW 
+
+• One domestic electronic fund transfer of $5,000 from UBank account 670864 25604717 in the name of N P Banu to Cobweb Pay account UAT561399 on 29 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number MP1935C9A 
+
+• One domestic electronic fund transfer of $5,000 from UBank account 670864 25604717 in the name of N P Banu to Cobweb Pay account UAT561399 on 29 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number EF4FW9K9J 
+
+• One domestic electronic fund transfer of $5,000 from UBank account 670864 25604717 in the name of N P Banu to Cobweb Pay account UAT561399 on 29 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number 2W2QKLKAQ 
+
+• One domestic electronic fund transfer of $100 from National Australia Bank Limited account 084642 739284582 in the name of NEPO PHYLLIS BANU to Cobweb Pay account UAT561399 on 25 January 2024 with reference number 0WIRM6UJV 
+
+  
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TC5enuP2YEvofCe5bevtFg1qGLZLG6VorM). 
+
+  
+
+Conclusion: 
+
+It was reported by Monoova that Nepo Phyllis Lusik BANU is the recipient of funds of fraud origin totalling $19,995 which are subjected to fraudulent investigations by UBank 
+
+The account activity is unusual because Nepo Phyllis Lusik BANU conducted multiple deposits totalling $20,097.5 followed by rapid purchases of cryptocurrencies and withdrawal on the same day. 
+
+Moreover, BANU is only 25 years old and deposited a large amount of funds within two days which showed that the customer profile and the account activity is inconsistent. 
+
+ 
+GFS8: 
+
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customers Vladislav MARTEMYANOV, Gavinder S SANGEDHA, Michael ALEMU, Riham K MUSTAFA, Medhat MATAR, Nazar Abdelsadig BAKHIT for Internet fraud, Unusual account activity, and Inconsistent with customer profile. It is also to be noted that BAKHIT was reported on 30 January 2024 under reference 61216045 for similar activity. It appears that the above mentioned customers are part of a syndicate who received fraudulently acquired funds into their accounts followed by withdrawing into a common crypto wallet address.  
+
+  
+
+Customer Profile: 
+
+Vladislav MARTEMYANOV 
+
+Vladislav MARTEMYANOV aged 19 years, opened his Cobweb Pay account on 1 February 2024. MARTEMYANOV provided his Source of funds as Wages/salary, and Gifts/grants. MARTEMYANOV also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Gavinder S SANGEDHA  
+
+Gavinder S SANGEDHA, aged 35 years, opened his Cobweb Pay account on 4 February 2024. SANGEDHA provided his Source of funds as Wages/salary, and Gifts/grants. MARTEMYANOV also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Michael ALEMU  
+
+Michael ALEMU aged 28 years, opened his Cobweb Pay account on 29 January 2024. ALEMU provided his Source of funds as Wages/salary, and Gifts/grants. ALEMU also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Riham K MUSTAFA  
+
+Riham K MUSTAFA aged 27 years, opened her Cobweb Pay account on 24 January 2024. MUSTAFA provided her Source of funds as Wages/salary. MUSTAFA also mentioned that she opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Medhat MATAR  
+
+Medhat MATAR aged 18 years, opened his Cobweb Pay account on 5 February 2024. MATAR provided his Source of funds as Wages/salary, and Gifts/grants. MATAR also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Nazar Abdelsadig BAKHIT  
+
+Nazar Abdelsadig BAKHIT aged 19 years, opened his Cobweb Pay account on 24 January 2024. BAKHIT provided his Source of Funds as Wages/salary. He also mentioned that he opened the Cloudtech X account for trading and investment purposes. An open media search reveals that BAKHIT used to be a basketball player for Runcorn Rockets Basketball U16 team. Please refer to https://rocketsbasketball.com.au/menu9.php?pci=&page=5&page_name=runcornrockets&id=1384 for details.  
+
+  
+
+Transaction Analysis: 
+
+Vladislav MARTEMYANOV 
+
+Transaction review of Cobweb Pay account UUM595967 since account opening on 1 February 2024 till 12 February 2024 reveals that MARTEMYANOV conducted multiple deposits totalling $19,476 followed by rapid purchases and withdrawals of cryptocurrencies on 2 February 2024. 
+
+On 7 February 2024, Cloudtech X received a third-party request from Monoova pertaining to fraudulent transactions. Upon investigation into MARTEMYANOV ‘s Cobweb Pay account UUM595967 reveals that on 2 February 2024 in excess of $19,476 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $19,450 from HSBC Bank Australia Limited account 346022 204986090 in the name of VLADISLAV MARTEMYANOV to Cobweb Pay account UUM595967 on 2 February 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number Z8IZJ1UOB 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1). 
+
+ 
+
+Gavinder S SANGEDHA  
+
+Transaction review of Cobweb Pay account UXY595708 since account opening on 4 February 2024 till 12 February 2024 reveals that SANGEDHA conducted multiple deposits totalling $78,346 followed by rapid purchases and withdrawals of cryptocurrencies between 5 and 7 February 2024. 
+
+On 8 February 2024, Cloudtech X received multiple third-party requests from Monoova pertaining to fraudulent transactions. Upon investigation into SANGEDHA‘s Cobweb Pay account UXY595708 reveals that between 5 and 7 February 2024 in excess of $78,346 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $16,249 from HSBC Bank Australia Limited account 345039 394507090 in the name of GAVINDER SINGH SANGEDHA to Cobweb Pay account UXY595708 on 7 February 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number 3Y8C88FCN 
+
+• One domestic electronic fund transfer of $3,695 from HSBC Bank Australia Limited account 345039 394507090 in the name of GAVINDER SINGH SANGEDHA to Cobweb Pay account UXY595708 on 7 February 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number 56MGTXOJD 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1). 
+
+ 
+
+ Michael ALEMU 
+
+Transaction review of Cobweb Pay account UJA821879 since account opening on 29 January 2024 till 12 February 2024 reveals that ALEMU conducted multiple deposits totalling $16,700 followed by rapid purchases and withdrawals of cryptocurrencies between 30 January and 1 February 2024. 
+
+ALEMU is related to this syndicate based on transferring funds to the same crypto wallet address. It is also to be noted that ALEMU also received Domestic Electronic Fund Transfers from a HSBC Bank account. 
+
+• One domestic electronic fund transfer of $14,985 from HSBC Bank Australia Limited account 342251 308037412 in the name of ALEMU M to Cobweb Pay account UJA821879 on 1 February 2024 with reference number EVI9YRE85 
+
+Cloudtech X system shows that all the funds were transferred to two crypto wallet addresses (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1) and (0x21fe68AA8214545da25827F019E320eab8dA69E4) 
+
+  
+
+Riham K MUSTAFA  
+
+Transaction review of Cobweb Pay account UBS182644 since account opening on 24 January 2024 till 12 February 2024 reveals that MUSTAFA conducted multiple deposits totalling $20,309 followed by rapid purchases and withdrawals of cryptocurrencies between 24 and 30 January 2024. 
+
+MUSTAFA is related to this syndicate based on transferring funds to the same crypto wallet address. It is also to be noted that MUSTAFA also received Domestic Electronic Fund Transfers from a HSBC Bank account and used an unusual email address (Jxlagosbackagain@gmail.com) to open her account which raises further suspicion. 
+
+• One domestic electronic fund transfer of $18,900 from HSBC Bank Australia Limited account 342251 296026412 in the name of MUSTAFA R K to Cobweb Pay account UBS182644 on 30 January 2024 with reference number EVI9YRE85 
+
+• One domestic electronic fund transfer of $5 from HSBC Bank Australia Limited account 342201 132099090 in the name of RIHAM KORI MUSTAFA to Cobweb Pay account UBS182644 on 24 January 2024 with reference number 5IWHMUSGW 
+
+Cloudtech X system shows that all the funds were transferred to two crypto wallet addresses (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1) and (0x21fe68AA8214545da25827F019E320eab8dA69E4) 
+
+ 
+
+Medhat MATAR  
+
+Transaction review of Cobweb Pay account UKI475443 since account opening on 5 February 2024 till 12 February 2024 reveals that MATAR conducted a small deposit of $1 followed by rapid purchases and withdrawals of cryptocurrencies between 5 and 8 February 2024. 
+
+MATAR is related to this syndicate based on transferring funds to the same crypto wallet address. It is also to be noted that MATAR also received Domestic Electronic Fund Transfers from a HSBC Bank account and used an unusual email address (Dominickelvin607@gmail.com) to open his account which raises further suspicion. 
+
+• One domestic electronic fund transfer of $1 from HSBC Bank Australia Limited account 342201 135720090 in the name of MEDHAT MATAR to Cobweb Pay account UKI475443 on 5 February 2024 with reference number XUQ9ATQRU 
+
+ 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1)  
+
+ 
+
+Nazar Abdelsadig BAKHIT  
+
+It is also to be noted that BAKHIT was previously reported for receiving fraudulent funds on 30 January 2024 under AUSTRAC reference 61216045. All the suspicious transactions were listed as part of that SMR. Since then, the customer account has been suspended and no subsequent transactions were processed or attempted. 
+
+ 
+
+Conclusion: 
+
+It was reported by Monoova that Vladislav MARTEMYANOV is the recipient of funds of fraud origin totalling $19,450; Gavinder S SANGEDHA is the recipient of funds of fraud origin totalling $19,944 which are subjected to fraudulent investigations by HSBC Bank Australia Limited. 
+
+The account activity is unusual because Vladislav MARTEMYANOV, Gavinder S SANGEDHA, Michael ALEMU, Riham K MUSTAFA, Medhat MATAR, Nazar Abdelsadig BAKHIT conducted multiple deposits followed by rapid purchases of cryptocurrencies and withdrawal on the same day.  
+
+Moreover, MARTEMYANOV, SANGEDHA, ALEMU, MUSTAFA, MATAR and BAKHIT used common crypto wallets to transfer and withdraw their funds (0xd4Ed943d263c699dfE8d7BF59C64086D4a37aBE1) and (0x21fe68AA8214545da25827F019E320eab8dA69E4). In addition to that MARTEMYANOV, SANGEDHA, ALEMU, MUSTAFA, MATAR and BAKHIT used IP addresses within the Accra region of Ghana, whereas all their identification is from Australia, which further adds to the suspicion. 
+
+ 
+GFS 9: 
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customer Robert Michael ROSS for Internet fraud, and Unusual account activity. 
+
+  
+
+Customer Profile: 
+
+Robert Michael ROSS aged 54 years, opened his Cobweb Pay account on 14 November 2023. ROSS provided his Source of funds as Investment Proceeds and Inheritance. ROSS also mentioned that he opened the Cloudtech X account for Trading, OTC, Offshore investment platform / Forex (Fx) broker purposes. 
+
+  
+
+Transaction Analysis: 
+
+Transaction review of Cobweb Pay account URM516889 since account opening on 14 November 2023 till 13 February 2024 reveals that ROSS conducted multiple deposits totalling $1,010,551.26 followed by rapid purchases and withdrawals of cryptocurrencies between 14 November 2023 and 30 January 2024. 
+
+On 15 January 2024, Cloudtech X received a third-party request from Monoova pertaining to fraudulent transactions. Upon investigation into ROSS ‘s Cobweb Pay account URM516889 reveals that between 14 November 2023 and 30 January 2024 in excess of $1,010,551.26 Domestic Electronic Fund Transfers: 
+
+• One domestic electronic fund transfer of $25,150 from HSBC Bank Australia Limited account 344032 259483439 in the name of ROBERT MICHAEL ROSS to Cobweb Pay account URM516889 on 10 January 2024 which was reported as a fraudulent transaction by Monoova Payments Pty Ltd with reference number QYMCIM813 
+
+  
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (0x0265fb0f198D15e86f41219d0a840297f65725cE). 
+
+  
+
+Conclusion: 
+
+It was reported by Monoova that Robert Michael ROSS is the recipient of funds of fraud origin totalling $25,150 which are subjected to fraudulent investigations by HSBC Bank Australia Limited 
+
+The account activity is unusual because Robert Michael ROSS conducted multiple deposits totalling $1,010,551.26 followed by rapid purchases of cryptocurrencies and withdrawals. 
+
+GFS 10:
+This report is in relation to suspicion for Offence against a Commonwealth, State or Territory Law related to Cloudtech X customers Aimee Lee BURTON, Tuck Meng LAU, Jian Wei THEAR, Lihai ZHAN, Ye Eun JO, Tian Xiang HUANG, Yaoliang XU and Jian LIN for Unusual account activity, and Inconsistent with customer profile. It appears that the above-mentioned customers are part of a syndicate who transferred large amount of funds into their accounts followed by withdrawing into two common crypto wallet addresses (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY) and (TDwFDcJcYci8L9KcwjmUg36uC5KWXa5unR). It is also to be noted that Yaoliang XU was previously reported to AUSTRAC for using fraudulent identification document under reference 60930104. 
+
+Customer Profile: 
+
+Aimee Lee BURTON 
+
+Aimee Lee BURTON aged 42 years, opened her Cobweb Pay account on 9 January 2024. BURTON provided her Source of funds as Wages/salary, Retirement Income, Investment Proceeds, Inheritance, Legal Settlement, Business Income, and Gift/grants. BURTON also mentioned that she opened the Cloudtech X account for Investment, Trading, Asked to Open Account by Employer, Online Shopping, Experimentation / Curiosity, Ransomware / Cryptolocker Virus, OTC, Offshore investment platform / Forex (Fx) broker purposes. 
+
+ 
+
+Tuck Meng LAU  
+
+Tuck Meng LAU aged 50 years, opened his Cobweb Pay account on 8 January 2024. LAU provided his Source of funds as Investment Proceeds, Legal Settlement and Business Income. LAU also mentioned that he opened the Cloudtech X account for Investment and Trading purposes. 
+
+ 
+
+Jian Wei THEAR  
+
+Jian Wei THEAR aged 25 years, opened his Cobweb Pay account on 18 December 2023. THEAR provided his Source of funds as Business Income. THEAR also mentioned that he opened the Cloudtech X account for Experimentation / Curiosity purposes. 
+
+ 
+
+Lihai ZHAN  
+
+Lihai ZHAN aged 24 years, opened his Cobweb Pay account on 21 December 2023. ZHAN provided his Source of funds as Wages/salary, Retirement Income, Investment Proceeds, Inheritance, Legal Settlement, Business Income. ZHAN also mentioned that he opened the Cloudtech X account for Investment, Trading, Asked to Open Account by Employer, Online Shopping, Experimentation / Curiosity, and Ransomware / Cryptolocker Virus purposes. 
+
+ 
+
+Ye Eun JO  
+
+Ye Eun JO aged 43 years, opened his Cobweb Pay account on 9 January 2024. Eun JO provided her Source of funds as Wages/salary, and Gifts/grants. Eun JO also mentioned that she opened the Cloudtech X account for Trading purposes. 
+
+ 
+
+Tian Xiang HUANG  
+
+Tian Xiang HUANG aged 69 years, opened his Cobweb Pay account on 2 January 2024. HUANG provided her Source of funds as Wages/salary, Retirement Income and Gifts/grants. HUANG also mentioned that she opened the Cloudtech X account for Investment, Asked to Open Account by Employer, Online Shopping, and Trading purposes. 
+
+ 
+
+Yaoliang XU 
+
+Yaoliang XU aged 39 years, opened his Cobweb Pay account on 2 January 2024. XU provided his Source of funds as Wages/salary, and Investment Proceeds. XU also mentioned that he opened the Cloudtech X account for Investment, and Trading purposes. 
+
+ 
+
+Jian LIN 
+
+Jian LIN aged 67 years, opened his Cobweb Pay account on 22 December 2023. LIN provided his Source of funds as Business Income and Gifts/grants. LIN also mentioned that he opened the Cloudtech X account for Investment, and Trading purposes. 
+
+ 
+
+Transaction Analysis: 
+
+Aimee Lee BURTON 
+
+Transaction review of Cobweb Pay account UIQ750835 since account opening on 9 January 2024 till 15 February 2024 reveals that BURTON conducted multiple deposits totalling $62,129 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $5,000 from Australia and New Zealand Banking Group Limited account 014111 162690024 in the name of AIMEE LEE BURTON to Cobweb Pay account UIQ750835 on 31 January 2024 with reference number 0T73SQVIZ 
+
+• One domestic electronic fund transfer of $4,729 from HSBC Bank Australia Limited account 342251 208278090 in the name of AIMEE LEE BURTON to Cobweb Pay account UIQ750835 on 1 November 2023 with reference number 239877S4W 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY). 
+
+ 
+
+Tuck Meng LAU  
+
+Transaction review of Cobweb Pay account UOI662265 since account opening on 8 January 2024 till 15 February 2024 reveals that LAU conducted multiple deposits totalling $104,000 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $5,000 from Suncorp-Metway Limited account 484799 353140822 in the name of LAU TUCK MENG to Cobweb Pay account UOI662265 on 27 January 2024 with reference number R4T4FR5RB 
+
+• One domestic electronic fund transfer of $2,000 from Bendigo and Adelaide Bank Limited account 633000 211760749 in the name of TUCK MENG LAU T/AS TML DIGITAL MARKETING to Cobweb Pay account UOI662265 on 27 January 2024 with reference number Z83W7JDI2 
+
+• One domestic electronic fund transfer of $5,000 from Bendigo and Adelaide Bank Limited account 633000 210797874 in the name of TUCK MENG LAU to Cobweb Pay account UOI662265 on 27 January 2024 with reference number 9K7FC5LU5 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY). 
+
+ 
+
+Jian Wei THEAR  
+
+Transaction review of Cobweb Pay account USC943667 since account opening on 18 December 2023 till 15 February 2024 reveals that THEAR conducted multiple deposits totalling $556,848 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $5,000 from Great Southern Bank account 814282 51715031 in the name of thear to Cobweb Pay account USC943667 on 22 December 2023 with reference number PW8AWVC9Q 
+
+• One domestic electronic fund transfer of $5,000 from Great Southern Bank account 814282 51715032 in the name of jian wei thear to Cobweb Pay account USC943667 on 22 December 2023 with reference number BDHW2TUM7 
+
+ 
+
+• One domestic electronic fund transfer of $5,000 from Beyond Bank Australia Limited account 325185 04030045 in the name of jian wei thear to Cobweb Pay account USC943667 on 26 December 2023 with reference number 54QSR2MNO 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY). 
+
+  
+
+Lihai ZHAN  
+
+Transaction review of Cobweb Pay account ULL463198 since account opening on 21 December 2023 till 15 February 2024 reveals that ZHAN conducted multiple deposits totalling $341,297 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $3,000 from AMP Bank Limited  account 939200 124558276 in the name of Lihai Zhan to Cobweb Pay account UIQ750835 on 26 December 2023 with reference number ULL463198. 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY). 
+
+ 
+
+Ye Eun JO  
+
+Transaction review of Cobweb Pay account UZW529847 since account opening on 9 January 2024 till 15 February 2024 reveals that Eun JO conducted multiple deposits totalling $27,760 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $5,000 from Australia and New Zealand Banking Group Limited account 014111 163053131 in the name of Lihai Zhan to Cobweb Pay account UZW529847 on 12 January 2024 with reference number 1RBTFVI52. 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY). 
+
+ 
+
+Tian Xiang HUANG  
+
+Transaction review of Cobweb Pay account UQO484526 since account opening on 2 January 2024 till 15 February 2024 reveals that HUANG conducted multiple deposits totalling $292,669 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $5,000 from HSBC Bank Australia Limited account 342018 280909090 in the name of TIAN XIANG HUANG to Cobweb Pay account UQO484526 on 19 January 2024 with reference number Z0AYSIF1E. 
+
+• One domestic electronic fund transfer of $4,000 from Australia and New Zealand Banking Group Limited account 014111 162767597 in the name of TIAN XIANG HUANG to Cobweb Pay account UQO484526 on 19 January 2024 with reference number WP59FNBLJ 
+
+Cloudtech X system shows that all the funds were transferred to two crypto wallet addresses (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY) and (TDwFDcJcYci8L9KcwjmUg36uC5KWXa5unR). 
+
+ 
+
+Yaoliang XU 
+
+Transaction review of Cobweb Pay account UOW950039 since account opening on 2 January 2024 till 15 February 2024 reveals that XU conducted multiple deposits totalling $51,290 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $1,800 from Australia and New Zealand Banking Group Limited account 014111 162915123 in the name of YAOLIANG XU to Cobweb Pay account UOW950039 on 26 December 2023 with reference number TWDDUKK9Z. 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TDwFDcJcYci8L9KcwjmUg36uC5KWXa5unR). 
+
+ 
+
+Jian LIN 
+
+Transaction review of Cobweb Pay account ULP394248 since account opening on 22 December 2023 till 15 February 2024 reveals that ZHAN conducted multiple deposits totalling $582,220 followed by rapid purchases and withdrawals of cryptocurrencies. This includes: 
+
+• One domestic electronic fund transfer of $2,950 from Bendigo and Adelaide Bank Limited account 633123 211049630 in the name of JIAN LIN to Cobweb Pay account ULP394248 on 26 December 2023 with reference number 2YTPO7IK9. 
+
+• One domestic electronic fund transfer of $7,000 from Australia and New Zealand Banking Group Limited account 014111 337397189 in the name of JIAN LIN to Cobweb Pay account ULP394248 on 26 December 2023 with reference number NZL828ZVU. 
+
+ 
+
+Cloudtech X system shows that all the funds were transferred to a crypto wallet address (TDwFDcJcYci8L9KcwjmUg36uC5KWXa5unR). 
+
+ 
+
+ 
+
+Conclusion: 
+
+The account activity is unusual because Aimee Lee BURTON, Tuck Meng LAU, Jian Wei THEAR, Lihai ZHAN, Ye Eun JO, Tian Xiang HUANG, Yaoliang XU and Jian LIN conducted multiple deposits followed by rapid purchases of cryptocurrencies and withdrawal on the same day.  
+
+Moreover, Aimee Lee BURTON, Tuck Meng LAU, Jian Wei THEAR, Lihai ZHAN, Ye Eun JO, Tian Xiang HUANG, Yaoliang XU and Jian LIN used common crypto wallets to transfer and withdraw their funds (TWm16yt5VvQjb9EMAkDaZwHpZ5Ujs42mcY) and (TDwFDcJcYci8L9KcwjmUg36uC5KWXa5unR). In addition to that BURTON, LAU, THEAR, ZHAN, Eun JO, HUANG, XU, and LIN used IP addresses within Australia and Malaysia, whereas their identification is from Australia, which further adds to the suspicion. 
+
+Additionally, BURTON and ZHAN mentioned that they opened the Cloudtech X account as Asked to Open Account by Employer, and for Ransomware / Cryptolocker Virus which also raise suspicion. 
+

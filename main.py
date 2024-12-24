@@ -13,12 +13,19 @@ from utils.data_processor import (
     process_json_data, 
     process_image_data,
     process_pdf_data,
-    process_docx_data # Added to handle docx files
+    process_docx_data
 )
 from utils.report_generator import generate_report
 from utils.templates import DEFAULT_TEMPLATE, SMR_TEMPLATE
 from utils.transaction_monitor import analyze_transactions
 from utils.ocr_processor import extract_text_from_image
+from utils.visualization import (
+    create_transaction_timeline,
+    create_transaction_heatmap,
+    create_amount_distribution,
+    create_sender_recipient_network,
+    create_anomaly_scatter
+)
 
 st.set_page_config(page_title="AML/CTF Case Management System", layout="wide")
 
@@ -153,11 +160,42 @@ def display_transaction_monitoring():
         try:
             df = pd.read_csv(file) if file.name.endswith('.csv') else pd.read_excel(file)
 
+            # Ensure date column is datetime
+            df['date'] = pd.to_datetime(df['date'])
+
             # Display transaction summary
             st.subheader("Transaction Summary")
-            st.dataframe(df.head())
+            col1, col2, col3 = st.columns(3)
 
-            # Analyze transactions
+            with col1:
+                st.metric("Total Transactions", len(df))
+            with col2:
+                st.metric("Total Amount", f"${df['amount'].sum():,.2f}")
+            with col3:
+                st.metric("Average Amount", f"${df['amount'].mean():,.2f}")
+
+            # Interactive visualizations
+            st.subheader("Transaction Analysis Dashboard")
+
+            # Timeline visualization
+            st.plotly_chart(create_transaction_timeline(df), use_container_width=True)
+
+            # Transaction patterns
+            col1, col2 = st.columns(2)
+            with col1:
+                st.plotly_chart(create_amount_distribution(df), use_container_width=True)
+            with col2:
+                st.plotly_chart(create_transaction_heatmap(df), use_container_width=True)
+
+            # Network analysis
+            st.subheader("Transaction Network Analysis")
+            st.plotly_chart(create_sender_recipient_network(df), use_container_width=True)
+
+            # Anomaly detection
+            st.subheader("Anomaly Detection")
+            st.plotly_chart(create_anomaly_scatter(df), use_container_width=True)
+
+            # Analyze transactions for suspicious patterns
             alerts = analyze_transactions(df)
 
             # Display alerts
@@ -168,7 +206,6 @@ def display_transaction_monitoring():
 
                 # Option to generate SMR
                 if st.button("Generate Suspicious Matter Report"):
-                    # Redirect to SMR generator with pre-filled data
                     st.session_state['generate_smr'] = True
                     st.session_state['smr_data'] = alerts
                     st.experimental_rerun()
