@@ -8,6 +8,7 @@ import pytesseract
 from pdf2image import convert_from_path
 import tempfile
 import os
+import io  # Add this import for BytesIO
 from utils.data_processor import (
     process_excel_data, 
     process_json_data, 
@@ -232,14 +233,100 @@ def display_transaction_monitoring():
                 st.metric("Average Amount", f"${filtered_df['amount'].mean():,.2f}")
 
             # Export filtered data
-            if st.button("Export Filtered Data"):
-                csv = filtered_df.to_csv(index=False)
-                st.download_button(
-                    label="Download CSV",
-                    data=csv,
-                    file_name="filtered_transactions.csv",
-                    mime="text/csv"
+            st.header("Export Options")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                export_format = st.selectbox(
+                    "Export Format",
+                    ["CSV", "JSON", "Excel"]
                 )
+
+            with col2:
+                export_data = st.multiselect(
+                    "Data to Include",
+                    [
+                        "Transaction Details",
+                        "Risk Analysis",
+                        "Compliance Metrics",
+                        "AI Analysis",
+                        "Alert Triggers"
+                    ],
+                    default=["Transaction Details"]
+                )
+
+            if st.button("Generate Report"):
+                try:
+                    # Prepare export data based on selection
+                    export_dict = {}
+
+                    if "Transaction Details" in export_data:
+                        export_dict["transactions"] = filtered_df.to_dict(orient='records')
+
+                    if "Risk Analysis" in export_data:
+                        export_dict["risk_indicators"] = risk_indicators
+
+                    if "Compliance Metrics" in export_data:
+                        export_dict["compliance_metrics"] = compliance_data.to_dict(orient='records')
+
+                    if "AI Analysis" in export_data and 'ai_analysis' in locals():
+                        export_dict["ai_analysis"] = ai_analysis
+
+                    if "Alert Triggers" in export_data and alerts:
+                        export_dict["alerts"] = alerts
+
+                    # Generate export file based on format
+                    if export_format == "CSV":
+                        # For CSV, we'll focus on transaction data
+                        csv = filtered_df.to_csv(index=False)
+                        st.download_button(
+                            label="Download CSV Report",
+                            data=csv,
+                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+                            mime="text/csv"
+                        )
+
+                    elif export_format == "JSON":
+                        # JSON can include all selected data
+                        json_str = json.dumps(export_dict, indent=2, default=str)
+                        st.download_button(
+                            label="Download JSON Report",
+                            data=json_str,
+                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+                            mime="application/json"
+                        )
+
+                    else:  # Excel
+                        # Create Excel file with multiple sheets
+                        excel_buffer = io.BytesIO()
+                        with pd.ExcelWriter(excel_buffer, engine='openpyxl') as writer:
+                            if "Transaction Details" in export_data:
+                                filtered_df.to_excel(writer, sheet_name='Transactions', index=False)
+
+                            if "Risk Analysis" in export_data:
+                                pd.DataFrame([risk_indicators]).to_excel(writer, sheet_name='Risk Analysis', index=False)
+
+                            if "Compliance Metrics" in export_data:
+                                compliance_data.to_excel(writer, sheet_name='Compliance Metrics', index=False)
+
+                            if "AI Analysis" in export_data and 'ai_analysis' in locals():
+                                pd.DataFrame([ai_analysis]).to_excel(writer, sheet_name='AI Analysis', index=False)
+
+                            if "Alert Triggers" in export_data and alerts:
+                                pd.DataFrame({'alerts': alerts}).to_excel(writer, sheet_name='Alerts', index=False)
+
+                        excel_data = excel_buffer.getvalue()
+                        st.download_button(
+                            label="Download Excel Report",
+                            data=excel_data,
+                            file_name=f"compliance_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx",
+                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                        )
+
+                    st.success("Report generated successfully!")
+
+                except Exception as e:
+                    st.error(f"Error generating report: {str(e)}")
 
             # Interactive visualizations with filtered data
             st.subheader("Transaction Analysis Dashboard")
