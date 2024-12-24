@@ -26,6 +26,7 @@ from utils.visualization import (
     create_sender_recipient_network,
     create_anomaly_scatter
 )
+from utils.ai_analyzer import analyze_transaction_pattern
 
 st.set_page_config(page_title="AML/CTF Case Management System", layout="wide")
 
@@ -254,6 +255,55 @@ def display_transaction_monitoring():
             st.subheader("Anomaly Detection")
             st.plotly_chart(create_anomaly_scatter(filtered_df), use_container_width=True)
 
+            # AI Analysis Section
+            st.subheader("AI-Powered Analysis")
+            if st.button("Generate AI Analysis"):
+                with st.spinner("Analyzing transaction patterns using AUSTRAC and FATF typologies..."):
+                    ai_analysis = analyze_transaction_pattern(filtered_df)
+
+                    # Display analysis results
+                    col1, col2 = st.columns([1, 2])
+                    with col1:
+                        risk_color = {
+                            "high": "🔴",
+                            "medium": "🟡",
+                            "low": "🟢",
+                            "unknown": "⚪"
+                        }
+                        st.markdown(f"### Risk Level: {risk_color.get(ai_analysis['risk_level'].lower(), '⚪')} {ai_analysis['risk_level'].upper()}")
+
+                    with col2:
+                        if ai_analysis['matched_typologies']:
+                            st.markdown("### Matched AUSTRAC Typologies")
+                            for typology in ai_analysis['matched_typologies']:
+                                st.markdown(f"- {typology}")
+
+                    if ai_analysis['suspicious_patterns']:
+                        st.markdown("### Identified Patterns")
+                        for pattern in ai_analysis['suspicious_patterns']:
+                            st.markdown(f"- {pattern}")
+
+                    st.markdown("### Alert Triggers")
+                    if ai_analysis['alert_triggers']:
+                        for trigger in ai_analysis['alert_triggers']:
+                            st.warning(trigger)
+                    else:
+                        st.success("No immediate alert triggers identified")
+
+                    st.markdown("### Detailed Analysis")
+                    st.write(ai_analysis['explanation'])
+
+                    st.markdown("### Recommendations")
+                    for rec in ai_analysis['recommendations']:
+                        st.markdown(f"- {rec}")
+
+                    # Option to include AI analysis in SMR
+                    if st.button("Include in SMR"):
+                        if 'smr_data' not in st.session_state:
+                            st.session_state['smr_data'] = {}
+                        st.session_state['smr_data']['ai_analysis'] = ai_analysis
+                        st.success("AI analysis added to SMR data")
+
             # Detailed transaction view
             st.subheader("Transaction Details")
             st.dataframe(
@@ -314,6 +364,8 @@ def display_smr_generator():
             'suspect_details': suspect_details,
             'suspicious_activity': suspicious_activity
         }
+        if 'ai_analysis' in st.session_state['smr_data']:
+            smr_data['ai_analysis'] = st.session_state['smr_data']['ai_analysis']
 
         report = generate_report(smr_data, SMR_TEMPLATE)
 
