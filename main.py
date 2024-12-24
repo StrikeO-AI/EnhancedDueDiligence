@@ -163,40 +163,106 @@ def display_transaction_monitoring():
             # Ensure date column is datetime
             df['date'] = pd.to_datetime(df['date'])
 
+            # Advanced Filtering Section
+            st.sidebar.header("Filters")
+
+            # Date Range Filter
+            date_range = st.sidebar.date_input(
+                "Select Date Range",
+                value=(df['date'].min(), df['date'].max()),
+                min_value=df['date'].min().date(),
+                max_value=df['date'].max().date()
+            )
+
+            # Amount Range Filter
+            amount_range = st.sidebar.slider(
+                "Amount Range",
+                float(df['amount'].min()),
+                float(df['amount'].max()),
+                (float(df['amount'].min()), float(df['amount'].max()))
+            )
+
+            # Transaction Type Filter
+            transaction_types = df['type'].unique().tolist()
+            selected_types = st.sidebar.multiselect(
+                "Transaction Types",
+                transaction_types,
+                default=transaction_types
+            )
+
+            # Search Box
+            search_term = st.sidebar.text_input("Search (Sender/Recipient/Reference)")
+
+            # Apply Filters
+            mask = (
+                (df['date'].dt.date >= date_range[0]) &
+                (df['date'].dt.date <= date_range[1]) &
+                (df['amount'].between(amount_range[0], amount_range[1])) &
+                (df['type'].isin(selected_types))
+            )
+
+            # Apply Search
+            if search_term:
+                search_mask = (
+                    df['sender'].str.contains(search_term, case=False, na=False) |
+                    df['recipient'].str.contains(search_term, case=False, na=False) |
+                    df['reference'].str.contains(search_term, case=False, na=False)
+                )
+                mask = mask & search_mask
+
+            filtered_df = df[mask]
+
             # Display transaction summary
             st.subheader("Transaction Summary")
             col1, col2, col3 = st.columns(3)
 
             with col1:
-                st.metric("Total Transactions", len(df))
+                st.metric("Total Transactions", len(filtered_df))
             with col2:
-                st.metric("Total Amount", f"${df['amount'].sum():,.2f}")
+                st.metric("Total Amount", f"${filtered_df['amount'].sum():,.2f}")
             with col3:
-                st.metric("Average Amount", f"${df['amount'].mean():,.2f}")
+                st.metric("Average Amount", f"${filtered_df['amount'].mean():,.2f}")
 
-            # Interactive visualizations
+            # Export filtered data
+            if st.button("Export Filtered Data"):
+                csv = filtered_df.to_csv(index=False)
+                st.download_button(
+                    label="Download CSV",
+                    data=csv,
+                    file_name="filtered_transactions.csv",
+                    mime="text/csv"
+                )
+
+            # Interactive visualizations with filtered data
             st.subheader("Transaction Analysis Dashboard")
 
             # Timeline visualization
-            st.plotly_chart(create_transaction_timeline(df), use_container_width=True)
+            st.plotly_chart(create_transaction_timeline(filtered_df), use_container_width=True)
 
             # Transaction patterns
             col1, col2 = st.columns(2)
             with col1:
-                st.plotly_chart(create_amount_distribution(df), use_container_width=True)
+                st.plotly_chart(create_amount_distribution(filtered_df), use_container_width=True)
             with col2:
-                st.plotly_chart(create_transaction_heatmap(df), use_container_width=True)
+                st.plotly_chart(create_transaction_heatmap(filtered_df), use_container_width=True)
 
             # Network analysis
             st.subheader("Transaction Network Analysis")
-            st.plotly_chart(create_sender_recipient_network(df), use_container_width=True)
+            st.plotly_chart(create_sender_recipient_network(filtered_df), use_container_width=True)
 
             # Anomaly detection
             st.subheader("Anomaly Detection")
-            st.plotly_chart(create_anomaly_scatter(df), use_container_width=True)
+            st.plotly_chart(create_anomaly_scatter(filtered_df), use_container_width=True)
+
+            # Detailed transaction view
+            st.subheader("Transaction Details")
+            st.dataframe(
+                filtered_df.style.highlight_max(axis=0, subset=['amount']),
+                use_container_width=True
+            )
 
             # Analyze transactions for suspicious patterns
-            alerts = analyze_transactions(df)
+            alerts = analyze_transactions(filtered_df)
 
             # Display alerts
             if alerts:
